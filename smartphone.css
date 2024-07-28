@@ -1,0 +1,113 @@
+@media only screen and (max-width: 499px) {
+
+    #contenu span {
+        font-size: 0.7em;
+        text-shadow: 10px 10px 8px black;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    #bouton-meilleur-film {
+        position: unset;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .bouton-voir-plus {
+        bottom: 10px;
+        visibility: visible;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .meilleur-film {
+        bottom: 10px;
+        position: unset;
+        padding: 25px 20px 15px 20px;
+        margin-left: 40px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .meilleur-film {
+        flex-direction: column;
+        max-width: 60%;
+    }
+
+    #description-meilleure-film {
+        font-size: small;
+        max-width: none;
+        margin: auto;
+    }
+
+    .meilleur-film img {
+        margin: auto;
+    }
+
+    .details-film {
+        max-width: 80%;
+    }
+
+    .mHead {
+        margin-top: 10px;
+        margin-left: 10px;
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    #mTitre {
+        font-size: 1em;
+        width: 60%;
+    }
+
+    .mBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mBody h2 {
+        font-size: 1em;
+    }
+
+    .mBody p {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .mFermer {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: bolder;
+    }
+
+    .categories {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .categories :nth-child(n+3) {
+        position: relative;
+        display: none;
+
+    }
+
+    .categories img:nth-child(n) {
+        display: block;
+    }
+
+    .visible {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        position: relative;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+}

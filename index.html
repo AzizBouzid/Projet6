@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Just Stream It</title>
+        <link rel="icon" type="image/png" href="images/juststreamI.png">
+        <link rel="stylesheet" href="pc.css">
+        <link rel="stylesheet" href="tablette.css">
+        <link rel="stylesheet" href="smartphone.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id=contenu>
+                <img id="logo" src="images/logo.png" alt="image">
+                <span>Vidéos à la demande</span>
+            </div>
+        </header>
+        <main>
+            <section>
+                <h1>Meilleur film</h1>
+                <div class="meilleur-film">
+                    <img id="image-meilleur-film" src="images/01.jpg" alt="image">
+                    <div class="details-film">
+                        <h2 id="titre-meilleur-film">""</h2>
+                        <p id="description-meilleure-film"></p>
+                    </div>
+                    <a href="#" class="bouton" id="bouton-meilleur-film">Détails</a>
+                </div>
+            </section>
+            <section>
+                <h1>Films les mieux notés</h1>
+                <div class="categories" id="mieux-note">
+                </div>
+                <button class="bouton-voir-plus" id="bouton1" >Voir + / -</button>
+            </section>
+            <section>
+                <h1>Policier</h1>
+                <div class="categories" id="policier">
+                </div>
+                <button class="bouton-voir-plus" id="bouton2">Voir + / -</button>
+            </section>
+            <section>
+                <h1>Comédie</h1>
+                <div class="categories" id="comedie">
+                </div>
+                <button class="bouton-voir-plus" id="bouton3">Voir + / -</button>
+            </section>
+            <section>
+                <h1 id="choix">Autres:</h1>
+                <div class="liste-deroulante">
+                    <form method="get" action="/index.html">
+                        <select name="categories" id="categories">
+                            <option>Votre choix</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="categories" id="choix-categorie"></div>
+                <button class="bouton-voir-plus" id="bouton4">Voir + / -</button>
+            </section>
+        </main>
+        <div class="modal" id="modal" role="dialog">
+            <div class="mHead">
+                <div class="mFermer" data-dismiss="dialog" title="Fermer">Fermer</div>
+                <div class="mHeader">
+                    <h2 id="mTitre">Titre du film</h2>
+                    <div class="mImage">
+                        <img alt="movie cover" id="mImage" src="images/01.jpg">
+                    </div>
+                </div>
+                <div class="mBody">
+                    <h2>Genre: </h2>
+                    <p id="mGenre"></p>
+                    <h2>Date de sortie: </h2>
+                    <p id="mDate"></p>
+                    <h2>Classification: </h2>
+                    <p id="mClassification"></p>
+                    <h2>Score IMDB : </h2>
+                    <p id="mScore"></p>
+                    <h2>Réalisateur: </h2>
+                    <p id="mRealisateur"></p>
+                    <h2>Acteurs: </h2>
+                    <p id="mActeurs"></p>
+                    <h2>Durée : </h2>
+                    <p id="mDuree"></p>
+                    <h2>Pays d’origine: </h2>
+                    <p id="mPays"></p>
+                    <h2>Recettes Box-office: </h2>
+                    <p id="mRecettes"></p>
+                    <h2>Résumé: </h2>
+                    <p id="mResume"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

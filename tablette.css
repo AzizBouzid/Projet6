@@ -1,0 +1,84 @@
+@media only screen and (min-width: 500px) and (max-width: 1025px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+        font-size: 0.8em;
+    }
+
+    #contenu span {
+        font-size: 3em;
+        text-shadow: 10px 10px 8px black;
+        vertical-align: middle;
+        display: table-cell;
+    }
+
+    #bouton-meilleur-film {
+        bottom: 10px;
+        position: unset;
+
+    }
+
+    .bouton-voir-plus {
+        bottom: 10px;
+        visibility: visible;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .meilleur-film {
+        bottom: 10px;
+        position: unset;
+        padding: 25px 20px 15px 20px;
+        margin-left: 80px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .meilleur-film {
+        flex-direction: column;
+        max-width: 60%;
+    }
+
+    #description-meilleure-film {
+        font-size: small;
+        max-width: none;
+        margin: auto;
+    }
+
+    .meilleur-film img {
+        margin: auto;
+    }
+
+    .details-film {
+        max-width: 80%;
+    }
+
+    .categories {
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .categories :nth-child(n+5) {
+        position: relative;
+        display: none;
+
+    }
+
+    .visible {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        position: relative;
+        aspect-ratio: 1;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
