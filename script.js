@@ -42,10 +42,10 @@ function meilleurFilm() {
 function espaceImages(urlSection, classId) {
     fetch(urlSection)
         .then(Response => Response.json())
-        .then(datas => {
+        .then(data => {
             const section = document.getElementById(classId)
             section.innerHTML = ""
-            datas.results.forEach(espace => {
+            data.results.forEach(espace => {
                 let nouvelElement = document.createElement("div")
                 nouvelElement.classList.add("espace")
                 images = espace.image_url
@@ -66,7 +66,7 @@ function espaceImages(urlSection, classId) {
         });
 }
 
-// La fonction récupére des films par catégorie
+// La fonction récupére des films par catégorie pour liste déroulante
 function toutesCategories() {
     fetch(urlGenres)
         .then(Response => Response.json())
