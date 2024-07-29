@@ -38,6 +38,11 @@
         font-size: 1.5em;
     }
 
+    .mBody p {
+        width: 70%;
+        font-size: 1.5em;
+    }
+
     .meilleur-film {
         flex-direction: column;
         max-width: 60%;
